@@ -10,7 +10,7 @@ function generatePassword() {
     return;
   }
 
-}
+
 
 var useLowercase = confirm("Add lowercase characters?");
 var useUppercase = confirm("Add uppercase characters?");
@@ -22,6 +22,20 @@ if(!(useLowercase || useUppercase || useNumeric || useSpecial)) {
   return;
 }
 
+var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numericChars = "0123456789";
+var specialChars = "!@#$%^&*()_+";
+
+var password = "";
+for (var i = 0; i < lengthOfPassword i++) {
+  var randomIndex = Math.floor(Math.random() * characters.length);
+  password += characters.charAt(randomIndex);
+}
+
+return password;
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -30,6 +44,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
