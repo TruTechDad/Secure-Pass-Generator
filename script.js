@@ -9,6 +9,11 @@ function generatePassword() {
     return;
 }
 
+var useLowercase = confirm("Add lowercase characters?");
+var useLowercase = confirm("Add uppercase characters?");
+var useLowercase = confirm("Add numeric characters?");
+var useLowercase = confirm("Add special characters?");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
