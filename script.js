@@ -17,6 +17,11 @@ var useUppercase = confirm("Add uppercase characters?");
 var useNumeric = confirm("Add numeric characters?");
 var useSpecial = confirm("Add special characters?");
 
+if(!(useLowercase || useUppercase || useNumeric || useSpecial)) {
+  alert("You have to choice atleast one character type");
+  return;
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
