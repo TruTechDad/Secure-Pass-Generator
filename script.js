@@ -3,16 +3,15 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   var lengthOfPassword = prompt("Password must be between 8 and 128 characters: Enter Now!");
+  passwordLength = parseInt(passwordLength);
 
-  if (lengthOfPassword <= 8 || lengthOfPassword >= 128)
-    alert("Password length must be a number between 8 and 128.");
-    return;
+
 }
 
 var useLowercase = confirm("Add lowercase characters?");
-var useLowercase = confirm("Add uppercase characters?");
-var useLowercase = confirm("Add numeric characters?");
-var useLowercase = confirm("Add special characters?");
+var useUppercase = confirm("Add uppercase characters?");
+var useNumeric = confirm("Add numeric characters?");
+var useSpecial = confirm("Add special characters?");
 
 // Write password to the #password input
 function writePassword() {
