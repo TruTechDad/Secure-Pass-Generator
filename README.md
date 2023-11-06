@@ -8,3 +8,4 @@ I've incorporated JavaScript into the project to enable the generation of random
 ![Screenshot of Secure Pass Generator](./Password%20Pic.jpg)
 
 ## Link
+[Link to deploy site](https://trutechdad.github.io/Secure-Pass-Generator/)
